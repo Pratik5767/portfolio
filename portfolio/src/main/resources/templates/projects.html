@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+	<!-- Page Content-->
+	<div th:fragment="projects">
+		<!-- Projects Section-->
+		<section class="py-5">
+			<div class="container px-5 mb-5">
+				<div class="text-center mb-5">
+					<h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+				</div>
+
+				<div class="row gx-5 justify-content-center">
+					<div class="col-lg-11 col-xl-9 col-xxl-8">
+						<!-- Project Card 1-->
+						<div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5">
+							<div class="card-body-project p-0">
+								<div class="d-flex align-items-center">
+									<div class="project-content p-5">
+										<h2 class="fw-bolder">Car Rental System</h2>
+										<p style="text-align: justify;">
+											The Car Rental System is a full-stack web app where users can search, book,
+											and manage rental cars, while admins manage listings and bookings. Built
+											with Angular 16, Spring Boot, and MySQL, it features secure login, dynamic
+											car management, and a responsive interface with real-time availability and
+											role-based access.
+										</p>
+										<a href="https://github.com/Pratik5767/Car_Rental_System" target="_blank"
+											class="project-link">Link</a>
+									</div>
+									<img class="img-fluid project-image" src="assets/images/project-1.png" alt="..." />
+								</div>
+							</div>
+						</div>
+
+						<!-- Project Card 2-->
+						<div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5">
+							<div class="card-body-project p-0">
+								<div class="d-flex align-items-center">
+									<div class="project-content p-5">
+										<h2 class="fw-bolder">E Note</h2>
+										<p style="text-align: justify;">
+											E-Note is a java web app for managing digital notes. Users can create, edit,
+											and securely store notes online. Built with Servlets, JSP, and JDBC, it
+											includes user authentication, session management, and MySQL-based storage.
+											The app offers a clean interface for easy, paperless note-taking.
+										</p>
+										<a href="https://github.com/Pratik5767/E-Note" target="_blank"
+											class="project-link">Link</a>
+									</div>
+									<img class="img-fluid project-image" src="assets/images/project-3.png" alt="..." />
+								</div>
+							</div>
+						</div>
+
+						<!-- Project Card 3-->
+						<div class="card project-card overflow-hidden shadow rounded-4 border-0 mb-5">
+							<div class="card-body-project p-0">
+								<div class="d-flex align-items-center">
+									<div class="project-content p-5">
+										<h2 class="fw-bolder">Book Shop App</h2>
+										<p style="text-align: justify;">
+											The Book-Shop-App is a java web application for online book shopping. It
+											lets users browse, search, and buy books, with secure login and order
+											management. Admins manage the book catalog, while customers place orders
+											easily. Built with Java EE, JSP, and Servlets, it offers a smooth and
+											efficient shopping experience.
+										</p>
+										<a href="https://github.com/Pratik5767/Book-Shop-App" target="_blank"
+											class="project-link">Link</a>
+									</div>
+									<img class="img-fluid project-image" src="assets/images/project-2.png" alt="..." />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Call to action section-->
+		<section class="py-5 bg-gradient-primary-to-secondary text-white">
+			<div class="container px-5 my-5">
+				<div class="text-center">
+					<h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+					<a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" th:href="@{/contact}">Contact
+						me</a>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>
