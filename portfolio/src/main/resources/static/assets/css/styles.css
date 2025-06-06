@@ -13729,6 +13729,9 @@ html {
 
 }
 
+.text-justify {
+	text-align: justify}
+
 /* Project card css */
 .project-card {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -13797,8 +13800,15 @@ html {
 
 	.project-image {
 		width: 100% !important;
+		max-width: 675px;
 		height: auto !important;
 		display: block;
+		border-radius: 0px;
 		object-fit: cover;
+	}
+	
+	.project-link {
+		display: block;
+		text-align: center
 	}
 }
